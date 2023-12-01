@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="a.css">
+</head>
+<body>
+
+
+    <div class="parent">
+        <div class="div1">
+            <form action="">
+                <h1>Iniciar Sesion</h1>
+                <label for="">Nombre</label>
+                <input type="text" name="" id="">
+                <br><br>
+                <label for="">Apellido</label>
+                <input type="text" name="" id="">
+                <br><br>
+                <label for="">edad</label>
+                <input type="text" name="" id="">
+                <br><br>
+                <input type="button" value="Iniciar Sesion" onclick=listo()>
+            </form>
+            
+        </div>
+
+
+        <div class="div2" id="a">
+            <h1>Materias Pendientes</h1>
+            <form action="">
+                <label for="">Nombre y apellido</label>
+                <input type="text"id="nombre">
+                <br><br>
+                <label for="">Fecha de nacimiento</label>
+                <input type="date" id="fecha">
+                <br><br>
+                <label for="">curso</label>
+                <input type="text" id="curso">
+                <br><br>
+                <label for="">materia</label>
+                <input type="text" id="materia">
+                <br><br>
+                <label for="">calificaciones</label>
+                <input type="text" id="calificaciones">
+                <br><br>
+                <input type="button" value="Enviar" onclick=enviar()>
+            </form>
+            <h2>Tabla de calificaciones</h2>
+     
+            <table>
+                <tr>
+                    <th>Nombre y Apellido</th>
+                    <th>Fecha de nacimiento</th>
+                    <th>Curso</th>
+                    <th>Materia</th>
+                    <th>Calificaciones</th>
+                    <th>Modificar</th>
+                </tr>
+                <tbody id="tbody"></tbody>
+             </table>
+        </div>
+    </div>
+    
+</body>
+</html>
