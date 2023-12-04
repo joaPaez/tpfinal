@@ -1,3 +1,18 @@
+function enviar1(){
+    var nombre = document.getElementById("nombre").value;
+    var fecha = document.getElementById("fecha").value;
+    var curso = document.getElementById("curso").value;
+    var materia = document.getElementById("materia").value;
+    var calificaciones = document.getElementById("calificaciones").value;
+
+    if(nombre=="" || fecha=="" || curso=="" || materia=="" || calificaciones==""){
+        alert("complete los campos");
+    }
+    else{
+        enviar()
+    }
+}
+
 function enviar(){
     var nombre = document.getElementById("nombre").value;
     var fecha = document.getElementById("fecha").value;
@@ -69,5 +84,16 @@ function eliminar(button){
 }
 function listo(){
     document.getElementById("a").style.display="block";
+}
+function listo1(){
+    nombre1=document.getElementById("nombre1").value;
+    apellido1=document.getElementById("apellido1").value;
+    edad1=document.getElementById("edad1").value;
+    if (nombre1=="" || apellido1=="" || edad1==""){
+        alert("complete los camppos")
+    }
+    else{
+        listo()
+    }
 }
 
